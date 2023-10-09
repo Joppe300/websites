@@ -1,10 +1,81 @@
 * {
-  /* Alle elementen krijg 0 margin */
   margin: 0px;
   box-sizing: border-box;
 }
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #eee;
+}
+/* nav */
 
-/* Responsive maken */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+  border-bottom: 3px solid darkred;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.brand{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: darkred;
+}
+/* app */
+.app {
+  width: 500px;
+  margin-inline: auto;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.content{
+  padding: 1rem;
+}
+footer{
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  font-weight: bold;
+  border-top: 3px solid darkred;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.flex{
+  display: flex;
+  gap: 1rem;
+}
+/* media querry maken */
+@media (width > 700px){
+  .flex{
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 800px) {
   .flexbox {
     /* Stack flexbox in een kolom ipv in een rij op screens die kleiner zijn dan 800px */
