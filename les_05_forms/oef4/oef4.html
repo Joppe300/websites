@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        label{
+            display: block;
+        }
+        input, select{
+            background-color: orange;
+        }
+        option{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="voornaam">voornaam</label>
+            <input type="text" name="voornaam" id="voornaam" placeholder="voornaam">
+        </div>
+        <div>
+            <label for="familienaam">familienaam</label>
+            <input type="text" name="familienaam" id="familienaam" placeholder="familienaam">
+        </div>
+        <div>
+            <label for="auto">kies een auto</label>
+            <select name="auto" id="auto">
+                <option></option>
+                <option value="Ford">Ford</option>
+                <option value="Peugot">Peugot</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Skoda">Skoda</option>
+                <option value="Saab">Saab</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit" value="regeistreren">
+        </div>
+    </form>
+</body>
+</html>

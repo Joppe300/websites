@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list &amp; tabels</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table:nth-child(1){
+            margin: 1em;
+            border: 1px #000;
+            border-collapse: collapse;
+        }
+        table:nth-child(1) tr:nth-child(even){
+            background-color: #ddd;
+        }
+        table:nth-child(1) td, th{
+            border: solid 1px #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Naam</th>
+            <th>E-mail</th>
+            <th>Website</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Joppe</td>
+            <td><a href="mailto:r0938828@student.thomasmore.be">r0938828@student.thomasmore.be</a></td>
+            <td><a href="http://ceulemansj-project.be" target="_blank">ceulemansj-project.be</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ruben</td>
+            <td><a href="mailto:r0905694@student.thomasmore.be">r0905694@student.thomasmore.be</a></td>
+            <td><a href="http://google.com" target="_blank">rubens's website</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Wesley</td>
+            <td><a href="mailto:wesleys.outlook.be">wesleys.outlook.be</a></td>
+            <td><a href="http://google.com" target="_blank">wesley's website</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Britt</td>
+            <td><a href="mailto:brittsoutlook.be">brittsoutlook.be</a></td>
+            <td><a href="#">britt's website</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Wouter</td>
+            <td><a href="mailto:#">Wouters mail</a></td>
+            <td><a href="#">Wouters website</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Mathias</td>
+            <td><a href="mailto:#">Mathias mail</a></td>
+            <td><a href="#">Mathias website</a></td>
+        </tr>
+    </table>
+
+    <!--table>tr*2-->
+    <table>
+        <tr></tr>
+        <tr></tr>
+    </table>
+
+    <!--table>tr>td*3{cel $}-->
+    <table>
+        <tr>
+            <td>cel 1</td>
+            <td>cel 2</td>
+            <td>cel 3</td>
+        </tr>
+    </table>
+    <!--table>tr*3>td*2{cel $}-->
+    <table>
+        <tr>
+            <td>cel 1</td>
+            <td>cel 2</td>
+        </tr>
+        <tr>
+            <td>cel 1</td>
+            <td>cel 2</td>
+        </tr>
+        <tr>
+            <td>cel 1</td>
+            <td>cel 2</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            width: 100%;
+        }
+        form{
+            width: 100%;
+        }
+        label{
+            display: block;
+        }
+        input{
+            box-shadow: 5px 5px #eee;
+            border-radius: 15px;
+            margin: 5px;
+            padding: 5px;
+            width: 40%;
+            height: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/sendmail.php" method="post">
+        <div>
+            <label for="voornaam">voornaam: </label>
+            <input type="text" name="voornaam" id="voornaam" placeholder="Stijn">
+        </div>
+        <input type="hidden" name="studentemail" id="studentemail" value="r0938828@studet.thomasmore.be">
+        <div>
+            <label for="familienaam">familienaam: </label>
+            <input type="text" name="familienaam" id="familienaam" placeholder="Lenaerts">
+        </div>
+        <div>
+            <label for="gebruikersnaam">gebruikersnaam: </label>
+            <input type="email" name="gebruikersnaam" id="gebruikersnaam" placeholder="mail@thomasmore.be">
+        </div>
+        <div>
+            <label for="nickname">nickname: </label>
+            <input type="text" name="nickname" id="nickname" required min="5" max="15">
+        </div>
+        <div>
+            <label for="passwoord">passwoord: </label>
+            <input type="password" name="passwoord" id="passwoord" required>
+        </div>
+        <div>
+            <label for="passwoord">passwoord: </label>
+            <input type="password" name="passwoord" id="passwoord" required>
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit" value="registreren">
+        </div>
+    </form>
+</body>
+</html>

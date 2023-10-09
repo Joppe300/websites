@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        form{
+            width: 40%;
+        }
+        label{
+            display: block;
+        }
+        .input{
+            background-color: lightblue;
+        }
+        .input:focus{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="voornaam">voornaam: </label>
+            <input class="input" type="text" name="voornaam" id="voornaam" placeholder="voornaam">
+        </div>
+        <div>
+            <label for="familienaam">familienaam: </label>
+            <input class="input" type="text" name="familienaam" id="familienaam" placeholder="familienaam">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit" value="Resgistreren">
+        </div>
+    </form>
+</body>
+</html>

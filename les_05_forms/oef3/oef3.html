@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            width: 25%;
+        }
+        .kleur{
+            background-color: lightgoldenrodyellow;
+            width: 100%;
+        }
+        fieldset{
+            font-size: 12px;
+            text-align-last: left;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        legend{
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            text-align: left;
+        }
+        #submit{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset class="kleur">
+            <legend>geslacht</legend>
+            <label for="man">man
+                <input type="radio" name="geslacht" id="man" value="man">
+            </label>
+            <label for="vrouw">vrouw
+                <input type="radio" name="geslacht" id="vrouw" value="vrouw">
+            </label>
+            <label for="ander">ander
+                <input type="radio" name="geslacht" id="ander" value="ander">
+            </label>
+        </fieldset>
+        <fieldset class="kleur">
+            <legend>kleur ogen</legend>
+            <label for="Bruin">Bruin
+                <input type="radio" name="ogen" id="Bruin" value="Bruin">
+            </label>
+            <label for="Groen">Groen
+                <input type="radio" name="ogen" id="Groen" value="Groen">
+            </label>
+            <label for="blauw">blauw
+                <input type="radio" name="ogen" id="blauw" value="blauw">
+            </label>
+            <label for="grijs">grijs
+                <input type="radio" name="ogen" id="grijs" value="grijs">
+            </label>
+        </fieldset>
+        <input class="kleur" type="submit" name="submit" id="submit" value="resgistreren">
+    </form>
+</body>
+</html>
