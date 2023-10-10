@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    grid-template-columns: 60% auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+}
+@media (width < 500px){
+    body{
+        background-color: red;
+    }
+    section, main{
+        grid-template-columns: auto;
+    }
+    
+}
