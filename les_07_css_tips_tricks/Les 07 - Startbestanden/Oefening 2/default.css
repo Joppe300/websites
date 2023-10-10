@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.witte{
+background-color: white;
+height: 300px;
+width: 50%;
+padding: 5px;
+margin: 5px;
+}
+.rode{
+background-color: red;
+height: 200px;
+width: 75%;
+padding: 5px;
+}
+.geele{
+background-color: yellow;
+height: 100px;
+width: 50%;
+text-align: center;
+}
