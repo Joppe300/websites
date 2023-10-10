@@ -1,0 +1,20 @@
+main{
+    display: flex;
+}
+aside{
+    flex: 30%;
+    padding: 15px;
+}
+
+section{
+    flex: 70%;
+    padding: 15px;
+}
+@media (width < 600px){
+    aside, section{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+}
