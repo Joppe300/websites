@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+header, footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+nav{
+    background-color: #ddd;
+    list-style-type: none;
+}
+header,footer,nav li,main{
+    padding: 5px;
+}
