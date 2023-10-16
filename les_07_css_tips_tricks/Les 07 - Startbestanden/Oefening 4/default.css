@@ -12,11 +12,7 @@ main{
     grid-template-columns: 25% 25% 25% auto;
 }
 @media (width < 500px){
-    body{
-        background-color: red;
-    }
     section, main{
         grid-template-columns: auto;
     }
-    
 }
